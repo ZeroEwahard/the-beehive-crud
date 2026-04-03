@@ -1,13 +1,17 @@
-****The Beehive API****
+# 🐝 The Beehive API 
+<br>
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
+<br>
 Projeto que implementa autenticação baseada em JWT, controle de acesso por ROLES, 
 uso do DTO para isolamento de camadas de dados, tratamento global de exceções,
 documentação com Swagger e configuração de CORS para permitir integração com aplicações Front-End.
 
+<br>
 Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam de autenticação segura e gerenciamento de usuários.
+<br>
 
-**Tecnologias Utilizadas**
+## 🛠️ Tecnologias Utilizadas
 *  Java
 *  Spring Boot
 *  Spring Security
@@ -17,7 +21,7 @@ Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam 
 *  Global Exception Handler
 *  CORS Config
 
-**🔐 Autenticação com JWT**
+## 🔐 Autenticação com JWT
 Passo para a autenticação:
 
 1.  O usuário realiza login enviando email e senha.
@@ -27,10 +31,28 @@ Passo para a autenticação:
 
 Isso garante que apenas usuários autenticados possam acessar os endpoints protegidos.
 
-**Controle de Acesso por ROLES**
+## Controle de Acesso por ROLES
 O sistema implementar Role Based Access Control (RBAC)
 ROLE existente:
 * ROLE_USER
 * ROLE_ADMIN
 
 Algumas operações podem exigir permissões específicas:
+*  GET -> ADMIN
+*  POST -> Public
+*  DELETE -> Autenticaded
+*  PUT -> Autenticaded
+
+## ⚙️ Configurações de Ambiente
+**Configuração sobre JWT**
+api.security.token.secret=${Sua_chave_secreta_vindo_do_abiente_das_variavéis} 
+api.security.token.expiration=900000 <!--Define o tempo que durará o seu Token-->
+<br>
+**Configuração sobre o Administrador**
+admin.email=${ADMIN_EMAIL}
+admin.password=${ADMIN_PASSWORD}
+admin.name=${ADMIN_NAME}
+ <!--Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto-->
+
+ ## 📚 Documentação do (Swagger)
+
