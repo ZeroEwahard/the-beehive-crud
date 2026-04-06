@@ -46,13 +46,17 @@ Algumas operações podem exigir permissões específicas:
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT**
 api.security.token.secret=${Sua_chave_secreta_vindo_do_abiente_das_variavéis} 
-api.security.token.expiration=900000 <!--Define o tempo que durará o seu Token-->
+api.security.token.expiration=900000  ***Define o tempo que durará o seu Token***
 <br>
+
 **Configuração sobre o Administrador**
 admin.email=${ADMIN_EMAIL}
 admin.password=${ADMIN_PASSWORD}
 admin.name=${ADMIN_NAME}
- <!--Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto-->
+***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
  ## 📚 Documentação do (Swagger)
+ Com o Swagger, você pode acessar a interface para vizualizar todos os endpoints, os DTOs de entrada/saída e testar as requisições diretamente pelo navegador.
+
+ **Acess:** (http://localhost:8080/swagger-ui.html)
 
