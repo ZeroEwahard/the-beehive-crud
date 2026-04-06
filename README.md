@@ -31,8 +31,9 @@ Passo para a autenticação:
 
 Isso garante que apenas usuários autenticados possam acessar os endpoints protegidos.
 
-## Controle de Acesso por ROLES
+## 👮🛡️ Controle de Acesso por ROLES
 O sistema implementar Role Based Access Control (RBAC)
+
 ROLE existente:
 * ROLE_USER
 * ROLE_ADMIN
@@ -45,8 +46,9 @@ Algumas operações podem exigir permissões específicas:
 
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT**
-api.security.token.secret=${Sua_chave_secreta_vindo_do_abiente_das_variavéis} 
-api.security.token.expiration=900000  ***Define o tempo que durará o seu Token***
+api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} 
+api.security.token.expiration=900000  
+***Define o tempo que durará o seu Token***
 <br>
 
 **Configuração sobre o Administrador**
@@ -60,3 +62,17 @@ admin.name=${ADMIN_NAME}
 
  **Acess:** (http://localhost:8080/swagger-ui.html)
 
+## Autenticação e Endpoints
+Para acessar os endpoints protegidos, é necessário primeiro realizar o login para obter o Token JWT.
+
+1. **POST: /auth/login** Nesse endpoint você enviará as crendenciais ao login e retonará o Token JWT.
+2. Copie o token gerado.
+3. Com esse token as requisições subsequentes deverão está no cabeçalho da requisição:
+* Authorization: Bearer "***__TOKEN__***"
+
+**Endpoints de Usuário**
+* **POST** /usuario - Cria um novo usuário
+* **POST** /auth/login - Login do usuário e a geração do Token JWT
+* **GET** /usuario - Lista todos os usuários (Apenas para o ADMIN)
+* **PUT** /usuario/{id} - Atualiza os dados do usuário (Requer autenticação)
+* **DELETE** /usuario/{id} - Deleta o usuário (Apenas para o ADMIN)
