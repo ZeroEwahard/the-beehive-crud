@@ -1,4 +1,6 @@
 # 🐝 The Beehive API 
+
+**Descrição**
 <br>
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
@@ -20,6 +22,8 @@ Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam 
 *  Pattern
 *  Global Exception Handler
 *  CORS Config
+*  Validation
+*  PostgreSQL
 
 ## 🔐 Autenticação com JWT
 Passo para a autenticação:
@@ -46,8 +50,8 @@ Algumas operações podem exigir permissões específicas:
 
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT**
-api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} 
-api.security.token.expiration=900000  
+api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} <br>
+api.security.token.expiration=900000  <br>
 ***Define o tempo que durará o seu Token***
 <br>
 
@@ -75,4 +79,4 @@ Para acessar os endpoints protegidos, é necessário primeiro realizar o login p
 * **POST** /auth/login - Login do usuário e a geração do Token JWT
 * **GET** /usuario - Lista todos os usuários (Apenas para o ADMIN)
 * **PUT** /usuario/{id} - Atualiza os dados do usuário (Requer autenticação)
-* **DELETE** /usuario/{id} - Deleta o usuário (Apenas para o ADMIN)
+* **DELETE** /usuario/{id} - Deleta o usuário (Requer autenticação)
