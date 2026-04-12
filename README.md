@@ -61,6 +61,13 @@ admin.password=${ADMIN_PASSWORD} <br>
 admin.name=${ADMIN_NAME} <br>
 ***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
+**Configuração do PostgreSQL** <br>
+spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT:5432}/userSystem <br>
+spring.datasource.username=${DB_USER} <br>
+spring.datasource.password=${DB_PASSWORD} <br>
+spring.jpa.hibernate.ddl-auto=update <br>
+***Defina seu {DBs} em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
+
  ## 📚 Documentação do (Swagger)
  Com o Swagger, você pode acessar a interface para vizualizar todos os endpoints, os DTOs de entrada/saída e testar as requisições diretamente pelo navegador.
 
