@@ -1,6 +1,6 @@
 # 🐝 The Beehive API 
 
-**Descrição**
+## Descrição
 <br>
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
@@ -50,21 +50,21 @@ Algumas operações podem exigir permissões específicas:
 
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT**
-api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} <br>
+api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} <br> <br>
 api.security.token.expiration=900000  <br>
 ***Define o tempo que durará o seu Token***
 <br>
 
-**Configuração sobre o Administrador**
-admin.email=${ADMIN_EMAIL}
-admin.password=${ADMIN_PASSWORD}
+**Configuração sobre o Administrador** <br>
+admin.email=${ADMIN_EMAIL} <br>
+admin.password=${ADMIN_PASSWORD} <br>
 admin.name=${ADMIN_NAME}
 ***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
  ## 📚 Documentação do (Swagger)
  Com o Swagger, você pode acessar a interface para vizualizar todos os endpoints, os DTOs de entrada/saída e testar as requisições diretamente pelo navegador.
 
- **Acess:** (http://localhost:8080/swagger-ui.html)
+ **Acesse:** (http://localhost:8080/swagger-ui.html)
 
 ## Autenticação e Endpoints
 Para acessar os endpoints protegidos, é necessário primeiro realizar o login para obter o Token JWT.
@@ -75,8 +75,8 @@ Para acessar os endpoints protegidos, é necessário primeiro realizar o login p
 * Authorization: Bearer "***__TOKEN__***"
 
 **Endpoints de Usuário**
-* **POST** /usuario - Cria um novo usuário
-* **POST** /auth/login - Login do usuário e a geração do Token JWT
-* **GET** /usuario - Lista todos os usuários (Apenas para o ADMIN)
-* **PUT** /usuario/{id} - Atualiza os dados do usuário (Requer autenticação)
-* **DELETE** /usuario/{id} - Deleta o usuário (Requer autenticação)
+* **POST /usuario** - Cria um novo usuário
+* **POST /auth/login** - Login do usuário e a geração do Token JWT
+* **GET /usuario** - Lista todos os usuários (Apenas para o ADMIN)
+* **PUT /usuario/{id}** - Atualiza os dados do usuário (Requer autenticação)
+* **DELETE /usuario/{id}** - Deleta o usuário (Requer autenticação)
