@@ -49,7 +49,7 @@ Algumas operações podem exigir permissões específicas:
 *  PUT -> Autenticaded
 
 ## ⚙️ Configurações de Ambiente
-**Configuração sobre JWT**
+**Configuração sobre JWT** <br>
 api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} <br> <br>
 api.security.token.expiration=900000  <br>
 ***Define o tempo que durará o seu Token***
