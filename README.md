@@ -1,6 +1,6 @@
 # 🐝 The Beehive API 
 
-## Descrição
+## 💬 Descrição
 <br>
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
@@ -66,7 +66,7 @@ admin.name=${ADMIN_NAME} <br>
 
  **Acesse:** (http://localhost:8080/swagger-ui.html)
 
-## Autenticação e Endpoints
+## 🔑📍 Autenticação e Endpoints
 Para acessar os endpoints protegidos, é necessário primeiro realizar o login para obter o Token JWT.
 
 1. **POST: /auth/login** Nesse endpoint você enviará as crendenciais ao login e retonará o Token JWT.
