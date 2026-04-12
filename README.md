@@ -58,7 +58,7 @@ api.security.token.expiration=900000  <br>
 **Configuração sobre o Administrador** <br>
 admin.email=${ADMIN_EMAIL} <br>
 admin.password=${ADMIN_PASSWORD} <br>
-admin.name=${ADMIN_NAME}
+admin.name=${ADMIN_NAME} <br>
 ***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
  ## 📚 Documentação do (Swagger)
