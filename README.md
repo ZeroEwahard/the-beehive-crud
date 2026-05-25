@@ -3,14 +3,11 @@
 ## 💬 Descrição
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
-<br>
 Projeto que implementa autenticação baseada em JWT, controle de acesso por ROLES, 
 uso do DTO para isolamento de camadas de dados, tratamento global de exceções,
 documentação com Swagger e configuração de CORS para permitir integração com aplicações Front-End.
 
-<br>
 Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam de autenticação segura e gerenciamento de usuários.
-<br>
 
 ## 🛠️ Tecnologias Utilizadas
 *  Java
