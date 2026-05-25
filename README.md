@@ -1,7 +1,6 @@
 # 🐝 The Beehive API 
 
 ## 💬 Descrição
-<br>
 Um projeto de API REST de Gerenciamento de Usuários (CRUD) desenvolvida com Java e Spring Boot.
 
 <br>
