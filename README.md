@@ -47,7 +47,7 @@ Algumas operações podem exigir permissões específicas:
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT**
 ```properties
-api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***}
+api.security.token.secret=${Sua_chave_secreta_vindo_do_abiente_das_variavéis}
 api.security.token.expiration=900000 
 ```
 ***Define o tempo que durará o seu Token***
@@ -68,7 +68,7 @@ spring.datasource.username=${DB_USER}
 spring.datasource.password=${DB_PASSWORD}
 spring.jpa.hibernate.ddl-auto=update
 ```
-***Defina seu `{DBs}` em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
+***Defina seu `${DBs}` em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
 
  ## 📚 Documentação do (Swagger)
  Com o Swagger, você pode acessar a interface para vizualizar todos os endpoints, os DTOs de entrada/saída e testar as requisições diretamente pelo navegador.
