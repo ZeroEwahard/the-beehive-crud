@@ -45,15 +45,14 @@ Algumas operações podem exigir permissões específicas:
 *  PUT -> Autenticaded
 
 ## ⚙️ Configurações de Ambiente
-**Configuração sobre JWT** <br>
+**Configuração sobre JWT**
 ```properties
 api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***}
 api.security.token.expiration=900000 
 ```
 ***Define o tempo que durará o seu Token***
-<br>
 
-**Configuração sobre o Administrador** <br>
+**Configuração sobre o Administrador**
 ```properties
 admin.email=${ADMIN_EMAIL}
 admin.password=${ADMIN_PASSWORD}
@@ -62,14 +61,14 @@ admin.name=${ADMIN_NAME}
 ***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
 
-**Configuração do PostgreSQL** <br>
+**Configuração do PostgreSQL**
 ```properties
 spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT:5432}/userSystem
 spring.datasource.username=${DB_USER}
 spring.datasource.password=${DB_PASSWORD}
 spring.jpa.hibernate.ddl-auto=update
 ```
-***Defina seu {DBs} em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
+***Defina seu `{DBs}` em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
 
  ## 📚 Documentação do (Swagger)
  Com o Swagger, você pode acessar a interface para vizualizar todos os endpoints, os DTOs de entrada/saída e testar as requisições diretamente pelo navegador.
@@ -79,14 +78,13 @@ spring.jpa.hibernate.ddl-auto=update
 ## 🔑📍 Autenticação e Endpoints
 Para acessar os endpoints protegidos, é necessário primeiro realizar o login para obter o Token JWT.
 
-1. **POST: /auth/login** Nesse endpoint você enviará as crendenciais ao login e retonará o Token JWT.
+1. `POST: /auth/login` Nesse endpoint você enviará as crendenciais ao login e retonará o Token JWT.
 2. Copie o token gerado.
-3. Com esse token as requisições subsequentes deverão está no cabeçalho da requisição:
-* Authorization: Bearer "***__TOKEN__***"
+3. Com esse token as requisições subsequentes deverão está no cabeçalho da requisição: `Authorization: Bearer "__TOKEN__"`
 
 **Endpoints de Usuário**
-* **POST /usuario** - Cria um novo usuário
-* **POST /auth/login** - Login do usuário e a geração do Token JWT
-* **GET /usuario** - Lista todos os usuários (Apenas para o ADMIN)
-* **PUT /usuario/{id}** - Atualiza os dados do usuário (Requer autenticação)
-* **DELETE /usuario/{id}** - Deleta o usuário (Requer autenticação)
+* `POST /usuario` - Cria um novo usuário
+* `POST /auth/login` - Login do usuário e a geração do Token JWT
+* `GET /usuario` - Lista todos os usuários (Apenas para o ADMIN)
+* `PUT /usuario/{id}` - Atualiza os dados do usuário (Requer autenticação)
+* `DELETE /usuario/{id}` - Deleta o usuário (Requer autenticação)
