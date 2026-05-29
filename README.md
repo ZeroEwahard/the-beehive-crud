@@ -46,22 +46,29 @@ Algumas operações podem exigir permissões específicas:
 
 ## ⚙️ Configurações de Ambiente
 **Configuração sobre JWT** <br>
-api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***} <br> <br>
-api.security.token.expiration=900000  <br>
+```properties
+api.security.token.secret=${***Sua_chave_secreta_vindo_do_abiente_das_variavéis***}
+api.security.token.expiration=900000 
+```
 ***Define o tempo que durará o seu Token***
 <br>
 
 **Configuração sobre o Administrador** <br>
-admin.email=${ADMIN_EMAIL} <br>
-admin.password=${ADMIN_PASSWORD} <br>
-admin.name=${ADMIN_NAME} <br>
+```properties
+admin.email=${ADMIN_EMAIL}
+admin.password=${ADMIN_PASSWORD}
+admin.name=${ADMIN_NAME}
+```
 ***Defina seu ADMIN pela variavéis de ambiente. Obs: haverá apenas um único Administrador nesse projeto***
 
+
 **Configuração do PostgreSQL** <br>
-spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT:5432}/userSystem <br>
-spring.datasource.username=${DB_USER} <br>
-spring.datasource.password=${DB_PASSWORD} <br>
-spring.jpa.hibernate.ddl-auto=update <br>
+```properties
+spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT:5432}/userSystem
+spring.datasource.username=${DB_USER}
+spring.datasource.password=${DB_PASSWORD}
+spring.jpa.hibernate.ddl-auto=update
+```
 ***Defina seu {DBs} em suas variavéis de ambiente, senha, usuário, porta e seu localhost***
 
  ## 📚 Documentação do (Swagger)
