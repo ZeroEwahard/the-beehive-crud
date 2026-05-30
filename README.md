@@ -11,7 +11,7 @@ Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam 
 
 ## 🎥 Vídeo
 <p>
- <img src="/src/main/resources/videos/cadastrando%20Usuário.mp4"/>
+ <img src="/src/main/resources/videos/cadastrando Usuário.mp4"/>
 </p>
 
 ## 🛠️ Tecnologias Utilizadas
