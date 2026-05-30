@@ -10,7 +10,7 @@ documentação com Swagger e configuração de CORS para permitir integração c
 Objetivo é fornecer uma base sólida e escalável para sistemas que necessitam de autenticação segura e gerenciamento de usuários.
 
 ## 🎥 Vídeo
- <img src="/src/main/resources/videos/cadastrando Usuário.mp4"/>
+[Como cadastrar](/src/main/resources/videos/cadastrando Usuário.mp4)
 
 
 ## 🛠️ Tecnologias Utilizadas
